@@ -10,7 +10,7 @@ namespace WPFixedPages\Tests;
 /**
  * Construction plan test case.
  */
-require_once dirname(__DIR__) . '/lib/WPFixedPages/CustomPostType.php';
+require_once dirname(__DIR__) . '/lib/CustomPostType.php';
 
 use Mockery;
 use Brain\Monkey\Functions;
