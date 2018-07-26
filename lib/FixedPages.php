@@ -15,11 +15,11 @@ class FixedPages {
     protected $dbVersionKey = '';
     protected $dbVersion = 0;
 
-    public function __construct($config) {
+    public function __construct($config, $cptOptions = []) {
         $this->version = $config['version'];
         $this->name    = $config['name'];
 
-        new CustomPostType($this->name);
+        new CustomPostType($this->name, $cptOptions);
 
         $this->pages       = $this->setPages($config['pages']);
         $this->pagesByPath = $this->mapPagesToPaths($this->pages);
