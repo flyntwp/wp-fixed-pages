@@ -254,7 +254,7 @@ class FixedPages {
             }
         }
 
-        return $url;
+        return user_trailingslashit($url);
     }
 
     public function getConfigByPath($path) {
